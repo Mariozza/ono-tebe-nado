@@ -1,1 +1,1 @@
-https://github.com/Mariozza/ono-tebe-nado
+https://github.com/Mariozza/ono-tebe-nado-fd
