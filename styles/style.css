@@ -1,15 +1,15 @@
-body {
+/*body {
   margin: auto;
-}
+}                                                       */
 
-header {
+.header {
   font-family: 'Raleway', Times, sans-serif;
   font-size: 18px;
   font-weight: 400;
   box-sizing: border-box;
   width: 1100px;
-  height: 293px;
-  background: #FFFFFF;
+  padding-top: 90px;                               /*height: 293px;                                          */
+  padding-bottom: 93px;                           /*background: #FFFFFF;                                    */
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -36,6 +36,7 @@ header {
 
 .header__links-list-item_no-bullit {
   list-style: none;
+  text-decoration: none;
 }
 
 .header__logo-image {
@@ -44,12 +45,14 @@ header {
   height: 106px;
 }
 
+.header__address {
+  padding-left: 187px;
+}
+
 .address {
-  margin-top: -6px;
   font-style: normal;
   line-height: 135%;
   position: relative;
-  padding-left: 187px;
   text-underline-position: under;
 }
 
@@ -61,8 +64,8 @@ header {
   background-repeat: no-repeat;
   background-image: url(../images/cover.jpg);
   width: 1100px;
-  height: 757px;
-  z-index: -2;
+  min-height: 757px;
+                                    /* z-index: -2;*/
 }
 .overlay {
   display: flex;
@@ -72,15 +75,15 @@ header {
   height: 100%;
   background: #000000;
   opacity: 0.6;
-  z-index: -1;
+                                      /* z-index: 0;*/
 }
 
 .cover__title {
-  padding-top: 164px;
+  padding-top: 146px;
   width: 1000px;
-  height: 385px;
+                                       /*height: 385px;*/
   color:#FFFFFF;
-  z-index: 1;
+  position:relative;                  /*z-index: 3;*/
   font-family: 'Raleway', Times, sans-serif;
   font-size: 100px;
   font-weight: 700;
@@ -90,36 +93,36 @@ header {
 
 .aligned-text {
   display: block;
-  /*padding-top: 164px;*/
+  margin-top:18px;                 /*padding-top: 17px;                                    /*padding-top: 164px;*/
   padding-left: 50px;
 }
 
 .aligned-text_center {
-  display: block;
-  padding-top: 18px;
-  padding-left: 381px;
+                                /*display: block;*/
+                               /*padding-top: 18px;*/
+  margin-left: 331px;          /*padding-left: 381px;*/
 }
 
 .aligned-text_right {
-  display: block;
-  padding-top: 17px;
-  padding-left: 664px;
+                             /* display: block;*/
+                                /* padding-top: 17px;*/
+margin-left: 614px;             /*padding-left: 664px;*/
 }
 
 .cover__description {
   position: relative;
   width: 1100px;
-  height: 51px;
+                                /* height: 51px;*/
   display: flex;
-  margin-top: 246px;
-  padding-top: 1px;
+  margin-top: 105px;                /*246*/
+                               /*padding-top: 1px;*/
   padding-left: 50px;
   justify-content: space-between;
   align-items: center;
 }
 
 .cover__description-text {
-  padding-top: 51px;
+                                 /*padding-top: 51px;*/
   color:#FFFFFF;
   font-family: 'Raleway', Times, sans-serif;
   font-size: 22px;
@@ -138,7 +141,7 @@ header {
   text-transform:uppercase;
   cursor: pointer;
   background-color: transparent;
-  margin: 50px 50px 0;
+  margin-right: 50px;
   border-width: 1px;
   border-style: solid;
   border-color: white;
@@ -170,19 +173,20 @@ header {
 }
 
 .lots__card-list-item {
-  position: relative;
+  
   width: 334px;
   min-height: 596px;
 }
 
 .card {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .card_type_film {
@@ -198,7 +202,7 @@ header {
 }
 
 .card__title {
-  padding: 48px 40px 0 40px;
+  padding: 48px 40px 0 40px;    position:relative;
   color:white;
   font-family: 'Raleway', Times, sans-serif;
   font-size: 22px;
@@ -210,18 +214,18 @@ header {
 }
 
 .card__text {
-  padding: 0px 40px 48px 40px;
+  padding: 0px 40px 48px 40px;  position:relative;
   color:white;
   font-family: 'Raleway', Times, sans-serif;
   font-size: 20px;
   font-weight: 400;
-}
+}                                                     /*LJ<FDBNM CNHJRE*/
 .lots__look-more-link {
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 1px;
-  position: absolute;
-  padding: 30px 180px 0 40px;
+                                  /*position: absolute;*/
+display:flex; padding: 11px 0 0 40px;
   color:black;
   font-family: 'Raleway', Times, sans-serif;
   font-size: 20px;
@@ -230,9 +234,9 @@ header {
 
 .about {
   box-sizing: border-box;
-  width: 105px;
-  height: 595px;
-  margin-top: 170px;
+ /* width: 105px;*/
+  /*padding-bottom: 20px;/*height: 595px;*/
+  margin-top: 115px;
   display: grid;
   grid-template-columns: 334px 690px;
   gap: 50px;
@@ -275,29 +279,21 @@ header {
   padding-bottom: 25px;
 }
 
-footer {
+.footer {
   box-sizing: border-box;
   font-family: 'Raleway', Times, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 180px;
+  margin-top: 154px;
   width: 1100px;
-  height: 180px;
+  /*height: 180px;*/
   background: #FFFFFF;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer__address {
-  margin-top: 4px;
-  font-style: normal;
-  line-height: 135%;
   padding-left: 50px;
-  text-underline-position: under;
-}
-
-.footer__menu {
-  padding: 4px;
 }
 
 .footer__menu-list {
