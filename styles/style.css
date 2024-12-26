@@ -276,6 +276,7 @@
   background: #FFFFFF;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 82px;
 }
 
 .footer__address {
